@@ -1,0 +1,556 @@
+2024-07-28 00:36:49 [INFO] ------- test_pagination_ -----------  (test_owasp_juice.py:15)
+2024-07-28 00:36:49 [INFO] -------- Going to the URL: http://localhost:3000/#/ ------------- (setup.py:16)
+2024-07-28 00:36:52 [INFO] Clicked on Dismiss (homepage.py:57)
+2024-07-28 00:36:58 [INFO] Welcome popup handled (homepage.py:59)
+2024-07-28 00:36:58 [INFO] Clicked on Dismiss (homepage.py:71)
+2024-07-28 00:36:59 [ERROR] Timed out waiting for element to be invisible: ('xpath', "//div[@aria-label='cookieconsent']") (object_sync.py:50)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 46, in wait_for_element_to_be_invisible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:00 [ERROR] Exception occurred while handling Cookie dialog box: Message: 
+ (homepage.py:77)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 72, in handle_cookies
+    self.wait_for_element_to_be_invisible(self.cookie_dialog_box, 1)
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 53, in wait_for_element_to_be_invisible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 46, in wait_for_element_to_be_invisible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:00 [INFO] Got the list of items on Page 1 (test_owasp_juice.py:21)
+2024-07-28 00:37:01 [INFO] Clicked on Next button to go next page (homepage.py:84)
+2024-07-28 00:37:02 [INFO] Got the list of items on Page 2 (test_owasp_juice.py:24)
+2024-07-28 00:37:02 [INFO] Pagination works correctly. Different items are displayed on the second page. (test_owasp_juice.py:28)
+2024-07-28 00:37:02 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:31)
+2024-07-28 00:37:02 [INFO] ------- test_number_of_items_per_page -----------  (test_owasp_juice.py:44)
+2024-07-28 00:37:02 [INFO] -------- Going to the URL: http://localhost:3000/#/ ------------- (setup.py:16)
+2024-07-28 00:37:10 [ERROR] Timed out waiting for element to be visible: ('id', 'mat-dialog-0') (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:10 [ERROR] Exception occurred while handling welcome popup: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+ (homepage.py:63)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 55, in handle_welcome_page_popup
+    if self.wait_for_element_to_be_visible(self.welcome_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:11 [ERROR] Timed out waiting for element to be visible: ('xpath', "//div[@aria-label='cookieconsent']") (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:11 [ERROR] Exception occurred while handling Cookie dialog box: Message: 
+ (homepage.py:77)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 69, in handle_cookies
+    if self.wait_for_element_to_be_visible(self.cookie_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:12 [INFO] Items per page were verified sucessfully, items per page in dropdown - 12 Actual Items on Page: 12 (test_owasp_juice.py:55)
+2024-07-28 00:37:12 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:58)
+2024-07-28 00:37:13 [INFO] Items per page were verified sucessfully, items per page in dropdown - 24 Actual Items on Page: 24 (test_owasp_juice.py:55)
+2024-07-28 00:37:13 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:58)
+2024-07-28 00:37:13 [INFO] ------- test_valid_login -----------  (test_owasp_juice.py:71)
+2024-07-28 00:37:13 [INFO] -------- Going to the URL: http://localhost:3000/#/ ------------- (setup.py:16)
+2024-07-28 00:37:21 [ERROR] Timed out waiting for element to be visible: ('id', 'mat-dialog-0') (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:21 [ERROR] Exception occurred while handling welcome popup: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+ (homepage.py:63)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 55, in handle_welcome_page_popup
+    if self.wait_for_element_to_be_visible(self.welcome_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:22 [ERROR] Timed out waiting for element to be visible: ('xpath', "//div[@aria-label='cookieconsent']") (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:22 [ERROR] Exception occurred while handling Cookie dialog box: Message: 
+ (homepage.py:77)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 69, in handle_cookies
+    if self.wait_for_element_to_be_visible(self.cookie_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:25 [INFO] Expected side menu items: ['Kundenfeedback', 'Foto-Wand', 'Über uns', 'Hilfe zum Einstieg'] Actual side menu items: ['Kundenfeedback', 'Über uns', 'Foto-Wand', 'Hilfe zum Einstieg'] (homepage.py:117)
+2024-07-28 00:37:25 [INFO] Expected side menu headers: ['Kontakt', 'Unternehmen'] Actual side menu headers: ['Kontakt', 'Unternehmen'] (homepage.py:120)
+2024-07-28 00:37:25 [INFO] Test passed, testing for Deutsch (test_owasp_juice.py:80)
+2024-07-28 00:37:25 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:81)
+2024-07-28 00:37:25 [INFO] ------- test_valid_login -----------  (test_owasp_juice.py:71)
+2024-07-28 00:37:25 [INFO] -------- Going to the URL: http://localhost:3000/#/ ------------- (setup.py:16)
+2024-07-28 00:37:27 [INFO] Clicked on Dismiss (homepage.py:57)
+2024-07-28 00:37:33 [INFO] Welcome popup handled (homepage.py:59)
+2024-07-28 00:37:33 [INFO] Clicked on Dismiss (homepage.py:71)
+2024-07-28 00:37:34 [ERROR] Timed out waiting for element to be invisible: ('xpath', "//div[@aria-label='cookieconsent']") (object_sync.py:50)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 46, in wait_for_element_to_be_invisible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:34 [ERROR] Exception occurred while handling Cookie dialog box: Message: 
+ (homepage.py:77)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 72, in handle_cookies
+    self.wait_for_element_to_be_invisible(self.cookie_dialog_box, 1)
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 53, in wait_for_element_to_be_invisible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 46, in wait_for_element_to_be_invisible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:37 [INFO] Expected side menu items: ['Customer Feedback', 'Photo Wall', 'About Us', 'Help getting started'] Actual side menu items: ['Customer Feedback', 'About Us', 'Photo Wall', 'Help getting started'] (homepage.py:117)
+2024-07-28 00:37:37 [INFO] Expected side menu headers: ['Contact', 'Company'] Actual side menu headers: ['Contact', 'Company'] (homepage.py:120)
+2024-07-28 00:37:37 [INFO] Test passed, testing for English (test_owasp_juice.py:80)
+2024-07-28 00:37:37 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:81)
+2024-07-28 00:37:37 [INFO] ------- test_valid_login -----------  (test_owasp_juice.py:98)
+2024-07-28 00:37:37 [INFO] -------- Going to the URL: http://localhost:3000/#/ ------------- (setup.py:16)
+2024-07-28 00:37:45 [ERROR] Timed out waiting for element to be visible: ('id', 'mat-dialog-0') (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:45 [ERROR] Exception occurred while handling welcome popup: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+ (homepage.py:63)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 55, in handle_welcome_page_popup
+    if self.wait_for_element_to_be_visible(self.welcome_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:46 [ERROR] Timed out waiting for element to be visible: ('xpath', "//div[@aria-label='cookieconsent']") (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:46 [ERROR] Exception occurred while handling Cookie dialog box: Message: 
+ (homepage.py:77)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 69, in handle_cookies
+    if self.wait_for_element_to_be_visible(self.cookie_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:46 [INFO] Verifying url: login in current page  http://localhost:3000/#/login (basepage.py:13)
+2024-07-28 00:37:46 [INFO] Verified the URL successfully, the user is on the expected page: http://localhost:3000/#/login (basepage.py:17)
+2024-07-28 00:37:46 [INFO] Entered email as: test (object_sync.py:73)
+2024-07-28 00:37:46 [INFO] Entered password as: invalid (object_sync.py:73)
+2024-07-28 00:37:46 [INFO] Clicked on Login button (loginpage.py:23)
+2024-07-28 00:37:47 [INFO] warning message:Invalid email or password. (loginpage.py:27)
+2024-07-28 00:37:47 [INFO] Verified the login error message successfully.. (loginpage.py:35)
+2024-07-28 00:37:47 [INFO] Test passed - login with invalid creds (test_owasp_juice.py:112)
+2024-07-28 00:37:47 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:113)
+2024-07-28 00:37:47 [INFO] ------- test_valid_login -----------  (test_owasp_juice.py:98)
+2024-07-28 00:37:47 [INFO] -------- Going to the URL: http://localhost:3000/#/ ------------- (setup.py:16)
+2024-07-28 00:37:54 [ERROR] Timed out waiting for element to be visible: ('id', 'mat-dialog-0') (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:54 [ERROR] Exception occurred while handling welcome popup: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+ (homepage.py:63)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 55, in handle_welcome_page_popup
+    if self.wait_for_element_to_be_visible(self.welcome_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F3999632+30946]
+	(No symbol) [0x00007FF6F394E3C9]
+	(No symbol) [0x00007FF6F3846FDA]
+	(No symbol) [0x00007FF6F389822C]
+	(No symbol) [0x00007FF6F389850C]
+	(No symbol) [0x00007FF6F38DDCB7]
+	(No symbol) [0x00007FF6F38BCAAF]
+	(No symbol) [0x00007FF6F38DB041]
+	(No symbol) [0x00007FF6F38BC813]
+	(No symbol) [0x00007FF6F388A6E5]
+	(No symbol) [0x00007FF6F388B021]
+	GetHandleVerifier [0x00007FF6F3ACF83D+1301229]
+	GetHandleVerifier [0x00007FF6F3ADBDB7+1351783]
+	GetHandleVerifier [0x00007FF6F3AD2A03+1313971]
+	GetHandleVerifier [0x00007FF6F39CDD06+245686]
+	(No symbol) [0x00007FF6F395758F]
+	(No symbol) [0x00007FF6F3953804]
+	(No symbol) [0x00007FF6F3953992]
+	(No symbol) [0x00007FF6F394A3EF]
+	BaseThreadInitThunk [0x00007FFF6D97257D+29]
+	RtlUserThreadStart [0x00007FFF6ED4AF28+40]
+
+2024-07-28 00:37:55 [ERROR] Timed out waiting for element to be visible: ('xpath', "//div[@aria-label='cookieconsent']") (object_sync.py:39)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:55 [ERROR] Exception occurred while handling Cookie dialog box: Message: 
+ (homepage.py:77)
+Traceback (most recent call last):
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\pages\homepage.py", line 69, in handle_cookies
+    if self.wait_for_element_to_be_visible(self.cookie_dialog_box, timeout=1):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 42, in wait_for_element_to_be_visible
+    raise e
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\utilities\object_sync.py", line 35, in wait_for_element_to_be_visible
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eshant.garg\Downloads\Test\lynx_tests_assignment\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2024-07-28 00:37:56 [INFO] Verifying url: login in current page  http://localhost:3000/#/login (basepage.py:13)
+2024-07-28 00:37:56 [INFO] Verified the URL successfully, the user is on the expected page: http://localhost:3000/#/login (basepage.py:17)
+2024-07-28 00:37:56 [INFO] Entered email as: admin@juice-sh.op (object_sync.py:73)
+2024-07-28 00:37:56 [INFO] Entered password as: admin123 (object_sync.py:73)
+2024-07-28 00:37:56 [INFO] Clicked on Login button (loginpage.py:23)
+2024-07-28 00:37:59 [INFO] Verifying url: search in current page  http://localhost:3000/#/search (basepage.py:13)
+2024-07-28 00:37:59 [INFO] Verified the URL successfully, the user is on the expected page: http://localhost:3000/#/search (basepage.py:17)
+2024-07-28 00:37:59 [INFO] user is able to login into the application successfully with valid credentials (loginpage.py:48)
+2024-07-28 00:37:59 [INFO] Test passed - login with valid creds (test_owasp_juice.py:112)
+2024-07-28 00:37:59 [INFO] ######################## TEST PASSED #########################  (test_owasp_juice.py:113)

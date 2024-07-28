@@ -1,0 +1,8 @@
+virtualenv
+selenium
+pytest
+pytest-html
+pytest-xdist
+python-dotenv
+webdriver-manager
+pytest-html
