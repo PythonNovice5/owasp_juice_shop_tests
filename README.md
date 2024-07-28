@@ -163,3 +163,5 @@ This scan performs a full scan (without any time limit) and includes actual atta
 ```bash
 docker run --rm --user root -v $(pwd):/zap/wrk/:rw --net host -t zaproxy/zap-weekly zap-full-scan.py -r report_fullscan.html -t http://localhost:3000
 ```
+**Locate the HTML Reports**:
+   The reports will be saved in your current working directory as `report.html`, `report_baseline.html`, `report_api.html`, and `report_fullscan.html`.
