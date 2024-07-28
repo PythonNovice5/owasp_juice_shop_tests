@@ -8,6 +8,7 @@ from pages.setup import SetUp
 
 class TestSecurityGaps(BasePage):
 
+    @pytest.mark.security
     @pytest.mark.sql_injection
     @pytest.mark.parametrize("credentialstype", ["sql_injection_creds"])
     def test_sql_injection_login_admin(self, credentialstype, get_url_value):
@@ -30,6 +31,7 @@ class TestSecurityGaps(BasePage):
             pytest.fail(f"Test Failed {test_desc}!")
 
     @pytest.mark.ftp_access
+    @pytest.mark.security
     def test_ftp_unauthorized_access(self, get_url_value):
         self.logger.info("------- test_ftp_unauthorized_access ----------- ")
         self.pageobj(self.driver)
@@ -49,6 +51,7 @@ class TestSecurityGaps(BasePage):
             pytest.fail(f"Test failed - test_ftp_unauthorized_access {status_code}")
 
     @pytest.mark.usage_data_access
+    @pytest.mark.security
     def test_usage_data_access(self, get_url_value):
         self.logger.info("------- test_usage_data_access ----------- ")
         self.pageobj(self.driver)
