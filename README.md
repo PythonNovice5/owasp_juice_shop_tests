@@ -12,7 +12,7 @@ Using Docker is a straightforward way to set up and run the OWASP Juice Shop app
 
 ### Instructions
 
-1. **Install Docker**: Follow the installation instructions for your operating system from the [Docker website](https://docs.docker.com/get-docker/).
+1. **Install Docker (If not installed)**: Follow the installation instructions for your operating system from the [Docker website](https://docs.docker.com/get-docker/).
 
 2. **Pull the Juice Shop Docker Image**:
    ```bash
@@ -21,7 +21,7 @@ Using Docker is a straightforward way to set up and run the OWASP Juice Shop app
 
 3. **Run the Juice Shop Docker Container**:
    ```bash
-   docker run --rm -p 3000:3000 bkimminich/juice-shop
+   docker run -d --rm --name juice-shop -p 3000:3000 bkimminich/juice-shop
    ```
 
    This command runs the Juice Shop container and maps port 3000 on your host machine to port 3000 in the container.
@@ -35,7 +35,6 @@ Using Docker is a straightforward way to set up and run the OWASP Juice Shop app
 ### Prerequisites
 - **Python**: Ensure Python is installed. You can download it from [python.org](https://www.python.org/).
 - **Git**: Required for cloning the test suite repository.
-- **pytest**: The test suite uses `pytest` for running tests. You can install it using `pip`.
 
 ### Instructions
 
@@ -48,12 +47,17 @@ Using Docker is a straightforward way to set up and run the OWASP Juice Shop app
    ```bash
    cd owasp_juice_shop_tests
    ```
-
-3. **Create and Activate a Virtual Environment** (optional but recommended):
+3. **Set up Virtual env and install the dependencies [Windows]**:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   python -m venv venv 
+   venv\Scripts\activate.bat
    ```
+   **Set up Virtual env and install the dependencies [Linux]**:
+   ```bash
+   python3 -m venv venv 
+   source venv/bin/activate
+   ```
+   
 
 4. **Install Dependencies**:
    ```bash
@@ -132,27 +136,30 @@ Below are the test cases included in this test suite:
      - **Username**: `admin@juice-sh.op`
      - **Password**: `admin123`
   2. Verify that the login is successful and the expected response messages are displayed.
+## Security Scanning with OWASP ZAP
 
-## Contributing
+You can use OWASP ZAP to perform security scans on your application. Here are the different types of scans you can run:
 
-If you'd like to contribute to this test suite, please fork the repository, create a branch, and submit a pull request. For detailed guidelines, see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+### 1. Baseline Scan
 
-## License
+This scan runs the ZAP spider for 1 minute and then waits for the passive scanning to complete before reporting the results.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or feedback, you can reach out to:
-
-- [Your Name](https://github.com/your-username)
-- Email: you@example.com
-- Project Link: [https://github.com/username/repository-name](https://github.com/username/repository-name)
+```bash
+docker run --rm --user root -v $(pwd):/zap/wrk/:rw --net host -t zaproxy/zap-weekly zap-baseline.py -r report_baseline.html -t http://localhost:3000
 ```
 
-### Key Changes:
-- **Python and pytest**: Updated the instructions to use Python and `pytest` instead of Node.js and `npm`.
-- **Virtual Environment**: Added instructions for creating and activating a Python virtual environment.
-- **Dependencies**: Assumed the presence of a `requirements.txt` file for dependencies.
+### 2. API Scan
 
-Replace placeholders with your actual repository URL, personal information, and any specific configuration details relevant to your test environment.
+This scan performs scans against APIs defined by OpenAPI.
+
+```bash
+docker run --rm --user root -v $(pwd):/zap/wrk/:rw --net host -t zaproxy/zap-weekly zap-api-scan.py -f openapi -r report_api.html -t http://localhost:3000
+```
+
+### 3. Full Scan
+
+This scan performs a full scan (without any time limit) and includes actual attacks.
+
+```bash
+docker run --rm --user root -v $(pwd):/zap/wrk/:rw --net host -t zaproxy/zap-weekly zap-full-scan.py -r report_fullscan.html -t http://localhost:3000
+```
