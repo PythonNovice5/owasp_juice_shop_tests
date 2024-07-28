@@ -67,11 +67,31 @@ Using Docker is a straightforward way to set up and run the OWASP Juice Shop app
 
 ## Usage
 
-To run the test suite, use the following command:
+## Running Tests
+   **1. Running all tests via pytest command on Windows/Linux** 
+  
+  ```
+  Go to project directory owasp_juice_shop_tests (cd owasp_juice_shop_tests)
+  python -m pytest -v -s --headless --html=report.html tests
+  ```
+   **2. Running smoke(functional) tests via pytest command on Windows/Linux** 
+  
+  ```
+  Go to project directory owasp_juice_shop_tests (cd owasp_juice_shop_tests)
+  python -m pytest -v -s --headless --html=report.html -m smoke
+  ```
 
-```bash
-pytest
-```
+  **3. Running  security tests via pytest command on Windows/Linux as HeadLess browser**
+  
+  ```
+  Go to project directory lynx_tests_assignment (cd lynx_tests_assignment)
+  python -m pytest -v -s --headless --html=report.html -m security
+  ``` 
+  **4. Running tests via pytest command on Windows/Linux browser head**
+  
+  ```
+  Remove the argument --headless in the commands in steps 1-3 above, run the remaining
+  ``` 
 
 This command will execute all the test cases defined in the test suite.
 
